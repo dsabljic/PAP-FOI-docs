@@ -2,7 +2,7 @@
 
 # Setup
 
-(Standardni setup sa pip3 install -r requirements.txt)
+(Standardni setup sa venv i pip3 install -r requirements.txt)
 
 ## Tesseract
 
