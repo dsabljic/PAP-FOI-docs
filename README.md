@@ -9,7 +9,7 @@
 
 ### Kloniranje repozitorija
 ```bash
-git clone [URL repozitorija]
+git clone https://github.com/dsabljic/PAP-FOI-docs.git
 ```
 
 ### Kreiranje virtualnog okruženja
