@@ -1,9 +1,7 @@
-
 # PAP-FOI-docs
 
 ## Zahtjevi
 - Python 3.10
-- Jupyter Notebook
 - Pip
 - Git
 
