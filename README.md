@@ -1,8 +1,30 @@
 # PAP-FOI-docs
 
-# Setup
+#  Upute za pokretanje
 
-(Standardni setup sa venv i pip3 install -r requirements.txt)
+Nakon kloniranja git repozitorija treba kreirati virtual env
+
+```bash
+python3 -m venv env
+```
+
+Aktivacija evnvironmenta
+
+```bash
+source env/bin/activate
+```
+
+Deaktivacija
+
+```bash
+deactivate
+```
+
+Instaliranje potrebnih modula
+
+```bash
+pip3 install -r requirements.txt
+```
 
 ## Tesseract
 
