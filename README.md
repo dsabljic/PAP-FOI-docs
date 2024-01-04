@@ -54,3 +54,13 @@ sudo apt-get install tesseract-ocr-hrv
 ```bash
 export PATH=$PATH:/putanja/do/tesseract
 ```
+
+---
+
+Priložena je i finalna csv datoteka data.csv za brzi pristup podacima (bez *scrapinga* i ekstrakcije teksta).
+
+Priprema za upotrebu
+```python
+df = pd.read_csv('./data.csv')
+df['datum'] = pd.to_datetime(df['datum'])
+```
