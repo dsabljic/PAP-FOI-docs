@@ -64,3 +64,5 @@ Priprema za upotrebu
 df = pd.read_csv('./data.csv')
 df['datum'] = pd.to_datetime(df['datum'])
 ```
+
+Nakon toga može se odmah pokrenuti baza i nastaviti s radom.
