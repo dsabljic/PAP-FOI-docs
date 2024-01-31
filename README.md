@@ -23,14 +23,14 @@ python3 -m venv env
 source env/bin/activate
 ```
 
+### Instalacija Jupyter Notebook-a
+```bash
+pip3 install notebook
+```
+
 ### Deaktivacija virtualnog okruženja
 ```bash
 deactivate
-```
-
-### Instaliranje potrebnih modula
-```bash
-pip3 install -r requirements.txt
 ```
 
 ## Postavljanje Tesseract OCR-a
