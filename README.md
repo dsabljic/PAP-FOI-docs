@@ -5,16 +5,16 @@
 - Pip
 - Git
 
-## Postavljanje projekta
+## Postavljanje projekta za prikupljanje podataka sa [FOI stranice](https://www.foi.unizg.hr/hr/dokumenti)
 
 ### Kloniranje repozitorija
 ```bash
 git clone https://github.com/dsabljic/PAP-FOI-docs.git
+cd PAP-FOI-docs
 ```
 
 ### Kreiranje virtualnog okruženja
 ```bash
-cd PAP-FOI-docs
 python3 -m venv env
 ```
 
@@ -55,14 +55,22 @@ sudo apt-get install tesseract-ocr-hrv
 export PATH=$PATH:/putanja/do/tesseract
 ```
 
+Nakon toga može se pokrenuti Main.ipynb *notebook* kako bi se dokumenti preuzeli lokalno
+
 ---
 
-Priložena je i finalna csv datoteka data.csv za brzi pristup podacima (bez *scrapinga* i ekstrakcije teksta).
+Priložena je i finalna csv datoteka `data.csv` te `docs.db` za brzi pristup podacima (bez *scrapinga* i ekstrakcije teksta).
 
-Priprema za upotrebu
+Priprema za upotrebu (csv)
 ```python
 df = pd.read_csv('./data.csv')
 df['datum'] = pd.to_datetime(df['datum'])
 ```
 
 Nakon toga može se odmah pokrenuti baza i nastaviti s radom.
+
+Učitavanje podataka iz baze u DataFrame
+
+```python
+df = pd.read_sql('dokument', 'sqlite:///docs.db')
+```
