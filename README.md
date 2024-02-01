@@ -55,7 +55,7 @@ sudo apt-get install tesseract-ocr-hrv
 export PATH=$PATH:/putanja/do/tesseract
 ```
 
-Nakon toga može se pokrenuti Main.ipynb *notebook* kako bi se dokumenti preuzeli lokalno
+Nakon toga može se pokrenuti Main.ipynb *notebook* kako bi se dokumenti preuzeli lokalno.
 
 ---
 
